@@ -17,17 +17,13 @@ body {
 /* Header Styles */
 header {
   position: sticky;
-  /* Keeps header visible on scroll */
   top: 0;
   background-color: rgba(12, 12, 10, 0.9);
-  /* Transparent background */
   backdrop-filter: blur(64px);
-  /* Background blur effect */
   -webkit-backdrop-filter: blur(64px);
   /* For Safari */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* 1px stroke on bottom */
-  z-index: 1;
+  z-index: 100;
 }
 
 nav {
@@ -43,12 +39,20 @@ h1 {
   font-size: 1.5rem;
 }
 
+.markQuote {
+  margin-top: 200px;
+}
+
 /* Main Section Styles */
 main {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  /* Change from row to column to stack elements */
   justify-content: center;
   align-items: center;
+  width: 100%;
+  /* Ensure it takes full width */
 }
 
 .title {
@@ -60,6 +64,8 @@ main {
 }
 
 .title h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 136px;
   margin: 0;
   /* Remove any default margin for proper spacing */
 }
@@ -80,7 +86,14 @@ main {
   align-items: center;
 }
 
-.line {
+.line-one {
+  width: 684px;
+  height: 2px;
+  background-color: #282828;
+  margin: 0 auto;
+}
+
+.line-two {
   width: 684px;
   height: 2px;
   background-color: #282828;
@@ -93,4 +106,102 @@ main {
   font-size: 18px;
   margin: 60px 0;
   width: 542px;
+}
+
+.spacer {
+  height: 150px;
+}
+
+.about {
+  background-color: #171717;
+  height: 724px;
+  width: 100%;
+}
+
+.about-everything {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.about-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Golos Text';
+  src: url('/assets/fonts/GolosText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-three {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #9e9e9e;
+  text-align: left;
+}
+
+.text-three .highlighted {
+  color: #DEAE38;
+}
+
+.about-one,
+.about-two {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 18;
+  color: #9E9E9E;
+  line-height: 36px;
+  width: 427px;
+}
+
+.paragraph-group {
+  display: flex;
+  gap: 60px;
+}
+
+.paragraph-group p {
+  flex: 1;
+  margin: 0;
+}
+
+.paragraph-group p:last-child {
+  margin-bottom: 0;
+}
+
+/* Line Below About Text */
+.line-three {
+  width: 100%;
+  height: 2px;
+  background-color: #282828;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three-shapes{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.shape-one{
+  background-color: #282828;
+  width: 353px;
+  height: 241px;
+}
+
+.shape-two{
+  background-color: #282828;
+  width: 353px;
+  height: 241px;
+}
+
+.shape-three{
+  background-color: #282828;
+  width: 353px;
+  height: 241px;
 }

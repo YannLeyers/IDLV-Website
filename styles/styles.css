@@ -426,3 +426,73 @@ footer {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  /* Adjust font sizes */
+  .title {
+    font-size: 8vw;
+  }
+
+  .title h3 {
+    font-size: 8vw;
+  }
+
+  .divider-text {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .about-one, .about-two {
+    font-size: 14px;
+  }
+
+  .catalogue {
+    font-size: 2rem;
+  }
+
+  .catalogue-text {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .horizontal-scroll {
+    flex-wrap: wrap;
+  }
+
+  .image-container img {
+    max-width: 100px;
+  }
+
+  .three-shapes {
+    flex-direction: column;
+  }
+
+  .shape-one, .shape-two, .shape-three, .shape-four {
+    width: 90%;
+    height: 160px;
+  }
+
+  .designer-image img {
+    width: 150px;
+  }
+
+  footer p, footer ul, footer a {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Devices (portrait and landscape) */
+@media (max-width: 1024px) {
+  .three-shapes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .shape-one, .shape-two, .shape-three, .shape-four {
+    width: 45%;
+  }
+
+  .image-container img {
+    max-width: 100px;
+  }
+}

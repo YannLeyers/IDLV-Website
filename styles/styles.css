@@ -182,26 +182,145 @@ main {
   margin-right: auto;
 }
 
-.three-shapes{
+.three-shapes {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
 }
 
-.shape-one{
+.shape-one {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #9E9E9E;
   background-color: #282828;
-  width: 353px;
+  width: 297px;
   height: 241px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
-.shape-two{
+.shape-two {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #9E9E9E;
   background-color: #282828;
-  width: 353px;
+  width: 297px;
   height: 241px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
-.shape-three{
+.shape-three {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #9E9E9E;
   background-color: #282828;
-  width: 353px;
+  width: 297px;
   height: 241px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.shape-four {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #9E9E9E;
+  background-color: #282828;
+  width: 297px;
+  height: 241px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.extensive {
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Prevent vertical scrolling if images exceed the viewport height */
+}
+
+.catalogue {
+  font-family: 'Golos-Text', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #DEAE38;
+  margin-top: 103px;
+  margin-bottom: 20px;
+}
+
+.catalogue-text {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 18px;
+  color: #9E9E9E;
+  width: 45%;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  overflow-y: hidden;
+  /* Disable vertical scrolling */
+  white-space: nowrap;
+  /* Prevent wrapping */
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  /* Optional: adds a smooth scrolling effect */
+  margin-bottom: 103px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Ensure all images stay in one horizontal row */
+  gap: 16px;
+}
+
+.image-container img {
+  width: 216px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Optional: Styling the scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(222, 174, 56, 0.6);
+  border-radius: 4px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
 }

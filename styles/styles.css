@@ -112,6 +112,194 @@ main {
   width: 542px;
 }
 
+@media (max-width: 599px) {
+  .markQuote {
+    margin-top: 125px;
+  }
+
+  .title {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 136px;
+    line-height: 1;
+    margin-bottom: 60px;
+  }
+
+  .title h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .title .highlight {
+    font-size: 80px;
+    color: #DEAE38;
+    text-shadow: 0 0 10px rgba(222, 174, 56, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.2);
+  }
+
+  .divider-section {
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line-one {
+    width: 294px;
+    height: 2px;
+    background-color: #282828;
+    margin: 0 auto;
+  }
+
+  .line-two {
+    width: 294px;
+    height: 2px;
+    background-color: #282828;
+    margin: 0 auto;
+  }
+
+  .divider-text {
+    font-family: 'Golos-Text', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 30px 0;
+    width: 294px;
+  }
+
+  .about {
+    background-color: #171717;
+    width: 100%;
+    min-height: 235vh;
+  }
+
+  .about-everything {
+    width: 95%;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .text-three {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .paragraph-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .about-one,
+  .about-two {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  .line-three {
+    width: 294px;
+    height: 2px;
+    background-color: #282828;
+    margin: 0 auto;
+  }
+
+  .three-shapes {
+    display: flex;
+    flex-direction: column;
+    /* Stack all shapes vertically */
+    align-items: center;
+    /* Center the shapes horizontally */
+    gap: 20px;
+    /* Add spacing between each shape */
+  }
+
+  .shape-one,
+  .shape-two,
+  .shape-three,
+  .shape-four {
+    width: 90%;
+    /* Adjust the width for smaller screens */
+    max-width: 400px;
+    /* Optional: Limit the maximum width */
+  }
+
+  .catalogue-text {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .horizontal-scroll {
+    gap: 12px;
+    /* Reduce the gap between images */
+  }
+
+  .image-container img {
+    width: 150px;
+    /* Adjust image width */
+    height: 225px;
+    /* Adjust image height */
+  }
+
+  .designer-about {
+    flex-direction: column;
+    /* Stack the elements vertically */
+    width: 90%;
+    /* Reduce width for smaller screens */
+    margin-top: 60px;
+    /* Adjust top margin */
+    margin-bottom: 60px;
+    /* Adjust bottom margin */
+  }
+
+  .designer {
+    width: 100%;
+    /* Take full width for text section */
+    align-items: left;
+    /* Center text content */
+    margin-bottom: 30px;
+    /* Add margin at the bottom for spacing */
+  }
+
+  .designer-text {
+    font-size: 40px;
+    /* Adjust font size for smaller screens */
+    text-align: left;
+    /* Center-align the text */
+    margin-bottom: 15px;
+    /* Adjust margin */
+  }
+
+  .about-description {
+    font-size: 16px;
+    /* Slightly smaller font size for better readability */
+    text-align: left;
+    /* Center-align description */
+    width: 100%;
+    /* Make sure the about-description takes full width */
+  }
+
+  .designer-image {
+    height: 250px;
+    width: 296px;
+  }
+
+  .designer-image img {
+    height: 266px;
+    width: 296px;
+  }
+}
+
 .spacer {
   height: 150px;
 }
@@ -264,19 +452,21 @@ main {
 .catalogue {
   font-family: 'Golos-Text', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 55px;
   color: #DEAE38;
   margin-top: 103px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .catalogue-text {
   font-family: 'Golos-Text', sans-serif;
   font-size: 18px;
   color: #9E9E9E;
-  width: 45%;
+  width: 100%;
   line-height: 36px;
   margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .horizontal-scroll {
@@ -337,7 +527,7 @@ main {
 }
 
 .designer {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -347,7 +537,7 @@ main {
 .designer-text {
   font-family: 'Golos-Text', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 55px;
   color: #DEAE38;
   margin-top: 0;
   margin-bottom: 20px;
@@ -359,10 +549,12 @@ main {
   color: #9E9E9E;
   line-height: 36px;
   margin-bottom: 40px;
+  width: 90%;
+  text-align: left;
 }
 
 .designer-image {
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
@@ -425,74 +617,4 @@ footer {
 
 .footer-content a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  /* Adjust font sizes */
-  .title {
-    font-size: 8vw;
-  }
-
-  .title h3 {
-    font-size: 8vw;
-  }
-
-  .divider-text {
-    font-size: 14px;
-    width: 90%;
-  }
-
-  .about-one, .about-two {
-    font-size: 14px;
-  }
-
-  .catalogue {
-    font-size: 2rem;
-  }
-
-  .catalogue-text {
-    font-size: 14px;
-    width: 90%;
-  }
-
-  .horizontal-scroll {
-    flex-wrap: wrap;
-  }
-
-  .image-container img {
-    max-width: 100px;
-  }
-
-  .three-shapes {
-    flex-direction: column;
-  }
-
-  .shape-one, .shape-two, .shape-three, .shape-four {
-    width: 90%;
-    height: 160px;
-  }
-
-  .designer-image img {
-    width: 150px;
-  }
-
-  footer p, footer ul, footer a {
-    font-size: 14px;
-  }
-}
-
-/* Tablet Devices (portrait and landscape) */
-@media (max-width: 1024px) {
-  .three-shapes {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .shape-one, .shape-two, .shape-three, .shape-four {
-    width: 45%;
-  }
-
-  .image-container img {
-    max-width: 100px;
-  }
 }
